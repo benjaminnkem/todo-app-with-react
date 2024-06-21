@@ -1,11 +1,18 @@
-import Todo from "./components/Todo";
+import { useState } from "react";
+import TodoList from "./components/TodoList";
 
 const App = () => {
-  return (
-    <div>
-      <h1>To do list in React</h1>
+  const [todos, setTodos] = useState([]);
 
-      <Todo />
+  return (
+    <div className="grid place-content-center w-full h-screen">
+      <div className="min-w-80 space-y-4">
+        <div className="bg-primary p-4 font-bold text-center rounded-md">
+          <h1>React ToDo</h1>
+        </div>
+
+        <TodoList todos={todos} setTodos={setTodos} />
+      </div>
     </div>
   );
 };
