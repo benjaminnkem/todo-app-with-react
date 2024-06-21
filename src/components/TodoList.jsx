@@ -63,7 +63,7 @@ const TodoList = ({ todos, addTodo, removeTodo, completeTodo }) => {
       )}
 
       <button
-        className="flex items-center justify-center w-full gap-2 px-4 py-2 mt-3 rounded-2xl -bottom-6 bg-primary"
+        className="flex items-center justify-center w-full gap-2 px-4 py-2 mt-3 font-bold rounded-2xl -bottom-6 bg-primary"
         onClick={action}
       >
         <FaPlus />
