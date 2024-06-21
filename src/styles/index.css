@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-color: #efe5fb;
+  --todo-text-color: #9ea8c4;
+  --primary: #af7eeb;
+}
+
+body {
+  overflow-x: hidden;
+  background: #e3e9ff;
+  color: var(--text-color);
+}
